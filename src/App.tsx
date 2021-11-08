@@ -1,64 +1,77 @@
 import React from 'react';
+import { Button, Card, Col, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
 
 const App: React.FC = () => (
-    <div className="container">
-        <div className="row">
-            <div className="col-lg-10 col-xl-9 mx-auto">
-                <div className="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+    <Container>
+        <Row>
+            <Col lg="10" xl="9" className="mx-auto">
+                <Card className="flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
                     <div className="card-img-left d-none d-md-flex"></div>
-                    <div className="card-body p-4 p-sm-5">
-                        <h5 className="card-title text-center mb-5 fw-light fs-5">Register</h5>
-                        <form>
-                            <div className="form-floating mb-3">
-                                <input
+                    <Card.Body className="p-4 p-sm-5">
+                        <Card.Title className="text-center mb-5 fw-light fs-5">Register</Card.Title>
+                        <Form>
+                            <FloatingLabel
+                                controlId="floatingInputUsername"
+                                label="Username"
+                                className="mb-3">
+                                <Form.Control
                                     type="text"
-                                    className="form-control"
                                     id="floatingInputUsername"
                                     placeholder="myusername"
                                     required
                                     autoFocus
                                 />
-                                <label htmlFor="floatingInputUsername">Username</label>
-                            </div>
+                            </FloatingLabel>
 
-                            <div className="form-floating mb-3">
-                                <input
+                            <FloatingLabel
+                                controlId="floatingInputEmail"
+                                label="Email address"
+                                className="mb-3">
+                                <Form.Control
                                     type="email"
-                                    className="form-control"
                                     id="floatingInputEmail"
                                     placeholder="name@example.com"
+                                    required
+                                    autoFocus
                                 />
-                                <label htmlFor="floatingInputEmail">Email address</label>
-                            </div>
+                            </FloatingLabel>
 
                             <hr />
 
-                            <div className="form-floating mb-3">
-                                <input
+                            <FloatingLabel
+                                controlId="floatingPassword"
+                                label="Password"
+                                className="mb-3">
+                                <Form.Control
                                     type="password"
-                                    className="form-control"
                                     id="floatingPassword"
                                     placeholder="Password"
+                                    required
+                                    autoFocus
                                 />
-                                <label htmlFor="floatingPassword">Password</label>
-                            </div>
+                            </FloatingLabel>
 
-                            <div className="form-floating mb-3">
-                                <input
+                            <FloatingLabel
+                                controlId="floatingPasswordConfirm"
+                                label="Confirm Password"
+                                className="mb-3">
+                                <Form.Control
                                     type="password"
-                                    className="form-control"
                                     id="floatingPasswordConfirm"
                                     placeholder="Confirm Password"
+                                    required
+                                    autoFocus
                                 />
-                                <label htmlFor="floatingPasswordConfirm">Confirm Password</label>
-                            </div>
+                            </FloatingLabel>
 
                             <div className="d-grid mb-2">
-                                <button
-                                    className="btn btn-lg btn-primary btn-login fw-bold text-uppercase"
-                                    type="submit">
+                                <Button
+                                    className="btn-login fw-bold text-uppercase"
+                                    size="lg"
+                                    type="submit"
+                                    variant="primary">
                                     Register
-                                </button>
+                                </Button>
                             </div>
 
                             <a className="d-block text-center mt-2 small" href="#">
@@ -68,26 +81,30 @@ const App: React.FC = () => (
                             <hr className="my-4" />
 
                             <div className="d-grid mb-2">
-                                <button
-                                    className="btn btn-lg btn-google btn-login fw-bold text-uppercase"
-                                    type="submit">
+                                <Button
+                                    className="btn-login fw-bold text-uppercase"
+                                    size="lg"
+                                    type="submit"
+                                    variant="google">
                                     <i className="fab fa-google me-2"></i> Sign up with Google
-                                </button>
+                                </Button>
                             </div>
 
                             <div className="d-grid">
-                                <button
-                                    className="btn btn-lg btn-facebook btn-login fw-bold text-uppercase"
-                                    type="submit">
+                                <Button
+                                    className="btn-login fw-bold text-uppercase"
+                                    size="lg"
+                                    type="submit"
+                                    variant="facebook">
                                     <i className="fab fa-facebook-f me-2"></i> Sign up with Facebook
-                                </button>
+                                </Button>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        </Form>
+                    </Card.Body>
+                </Card>
+            </Col>
+        </Row>
+    </Container>
 );
 
 export default App;
