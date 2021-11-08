@@ -33,8 +33,6 @@ const App: React.FC = () => (
                                     type="email"
                                     id="floatingInputEmail"
                                     placeholder="name@example.com"
-                                    required
-                                    autoFocus
                                 />
                             </FloatingLabel>
 
@@ -48,8 +46,6 @@ const App: React.FC = () => (
                                     type="password"
                                     id="floatingPassword"
                                     placeholder="Password"
-                                    required
-                                    autoFocus
                                 />
                             </FloatingLabel>
 
@@ -61,8 +57,6 @@ const App: React.FC = () => (
                                     type="password"
                                     id="floatingPasswordConfirm"
                                     placeholder="Confirm Password"
-                                    required
-                                    autoFocus
                                 />
                             </FloatingLabel>
 
