@@ -1,3 +1,3 @@
 # Bootstrap Registration Page with Floating Labels
 
-Registration Page with Floating Form Labels and Splash Image
+Registration page with floating form labels and splash image bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
