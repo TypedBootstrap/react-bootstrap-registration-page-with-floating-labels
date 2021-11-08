@@ -1,4 +1,6 @@
 import React from 'react';
+import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Card, Col, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
 
 const App: React.FC = () => (
@@ -86,7 +88,8 @@ const App: React.FC = () => (
                                     size="lg"
                                     type="submit"
                                     variant="google">
-                                    <i className="fab fa-google me-2"></i> Sign up with Google
+                                    <FontAwesomeIcon icon={faGoogle} className="me-2" /> Sign up
+                                    with Google
                                 </Button>
                             </div>
 
@@ -96,7 +99,8 @@ const App: React.FC = () => (
                                     size="lg"
                                     type="submit"
                                     variant="facebook">
-                                    <i className="fab fa-facebook-f me-2"></i> Sign up with Facebook
+                                    <FontAwesomeIcon icon={faFacebookF} className="me-2" /> Sign up
+                                    with Facebook
                                 </Button>
                             </div>
                         </Form>
