@@ -24,7 +24,6 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => (
                 <FloatingLabel controlId="floatingInputUsername" label="Username" className="mb-3">
                     <Form.Control
                         type="text"
-                        id="floatingInputUsername"
                         name="username"
                         onBlur={handleBlur}
                         onChange={handleChange}
@@ -41,7 +40,6 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => (
                     className="mb-3">
                     <Form.Control
                         type="email"
-                        id="floatingInputEmail"
                         name="email"
                         onBlur={handleBlur}
                         onChange={handleChange}
@@ -55,7 +53,6 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => (
                 <FloatingLabel controlId="floatingPassword" label="Password" className="mb-3">
                     <Form.Control
                         type="password"
-                        id="floatingPassword"
                         name="password"
                         onBlur={handleBlur}
                         onChange={handleChange}
@@ -70,7 +67,6 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => (
                     className="mb-3">
                     <Form.Control
                         type="password"
-                        id="floatingPasswordConfirm"
                         name="passwordConfirm"
                         onBlur={handleBlur}
                         onChange={handleChange}
